@@ -2,7 +2,7 @@ import {combineReducers} from 'redux';
 import {persistReducer} from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
 
-import dataTableReducer from './reducers/dataTable.reducer';
+import userReducer from './reducers/user.reducer';
 
 const persistConfig = {
     key: 'root',
@@ -11,7 +11,7 @@ const persistConfig = {
 }
 
 const rootReducer = combineReducers({
-    tableData: dataTableReducer
+    userData: userReducer
 });
 
 

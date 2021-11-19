@@ -1,0 +1,7 @@
+export const UserActionTypes = {
+    FETCH_USER_DATA_START: 'FETCH_USER_DATA_START',
+    FETCH_USER_DATA_SUCCESS: 'FETCH_USER_DATA_SUCCESS',
+    FETCH_USER_DATA_FAIL: 'FETCH_USER_DATA_FAIL',
+}
+
+export default UserActionTypes;

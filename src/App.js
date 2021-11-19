@@ -1,10 +1,10 @@
-import { DataTable } from './components/data-table/DataTable';
+import React from 'react';
+import { UserMap } from './components/user-map/UserMap';
 
-function App() {
+export const App = () => {
   return (
     <div className="App">
-      <header />
-      <DataTable />
+      <UserMap />
     </div>
   );
 }
