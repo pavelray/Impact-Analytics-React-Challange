@@ -1,10 +1,12 @@
 import React from 'react';
-import { UserMap } from './components/user-map/UserMap';
+import { MoveiWrapper } from './components/Movie/MovieWrapper';
+// import { UserMap } from './components/user-map/UserMap';
 
 export const App = () => {
+
   return (
     <div className="App">
-      <UserMap />
+      <MoveiWrapper />
     </div>
   );
 }
