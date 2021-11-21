@@ -8,20 +8,20 @@ export const MoveTable = ({movies}) => {
         let durationA = 0;
         let durationB = 0;
         if(lastCharA === 'h'){
-            durationA = parseFloat(a.duration.slice(0,-1)) * 30;
+            durationA = parseFloat(a.duration.slice(0,-1)) * 60;
         }else{
             durationA = parseFloat(a.duration.slice(0,-1));
         }
         if(lastCharB === 'h'){
-            durationB = parseFloat(b.duration.slice(0,-1)) * 30;
+            durationB = parseFloat(b.duration.slice(0,-1)) * 60;
         }else{
             durationB = parseFloat(b.duration.slice(0,-1));
         }
 
-        if(durationA > durationB){
+        if(durationB > durationA){
             return -1;
         }
-        if(durationA < durationB){
+        if(durationB < durationA){
             return 1
         }
 
