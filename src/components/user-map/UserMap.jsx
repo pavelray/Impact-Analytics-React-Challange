@@ -3,7 +3,7 @@ import React, { Suspense, useEffect, useMemo, useState } from "react";
 import { MapContainer, Marker, Popup, TileLayer, Tooltip } from "react-leaflet";
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
-import { fetchUserDataStart } from "../../stores/actions/user.actions";
+import { fetchUserDataStart } from "../../stores/actions/actions";
 import {
   selectUserCordinates,
   selectUserData,

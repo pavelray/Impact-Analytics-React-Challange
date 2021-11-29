@@ -1,18 +1,10 @@
 import {combineReducers} from 'redux';
-import {persistReducer} from 'redux-persist';
-import storage from 'redux-persist/lib/storage';
 
-import userReducer from './reducers/user.reducer';
-
-const persistConfig = {
-    key: 'root',
-    storage,
-    whitelist: ['']
-}
+import dataReducer from './reducers/reducer';
 
 const rootReducer = combineReducers({
-    userData: userReducer
+    chartData: dataReducer
 });
 
 
-export default persistReducer(persistConfig, rootReducer);
+export default rootReducer;
